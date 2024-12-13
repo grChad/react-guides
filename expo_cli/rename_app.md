@@ -8,8 +8,8 @@ En su Archivo de configuración `app.json`, solo cambie `displayName`.
 
 ```json
 {
-	"name": "MyAppName",
-	"displayName": "My App Name"
+  "name": "MyAppName",
+  "displayName": "My App Name"
 }
 ```
 
@@ -19,7 +19,7 @@ Modificar el archivo `string.xml` de la ruta: `android/app/src/main/res/values/`
 
 ```xml
 <resources>
-    <string name="app_name">My App Name</string>
+  <string name="app_name">My App Name</string>
 </resources>
 ```
 

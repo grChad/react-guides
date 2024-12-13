@@ -28,7 +28,7 @@ export const SchemeLightColor = {
 };
 ```
 
-Donde `DarkTheme` y `DefaultTheme` se usan en **NavigationContainer** de `react-navigation/native`, que el el `root` de la aplicación. Y `SchemeDarkColor` y `SchemeLightColor` se usan en cualquier parte de la aplicación.
+Donde `DarkTheme` y `DefaultTheme` se usan en **NavigationContainer** de `react-navigation/native`, que es el `root` de la aplicación. Y `SchemeDarkColor` y `SchemeLightColor` se usan en cualquier parte de la aplicación.
 
 <details>
   <summary>Código completo aquí</summary>
@@ -143,9 +143,9 @@ export const useTheme = () => {
 
 Donde `useTheme` sera usado en **NavigationContainer** y `useScheme` en toda la App.
 
-## Usar el useColor.ts
+## Usar el useColor
 
-#### En NavigationContainer
+#### useTheme en NavigationContainer
 
 ```typescript
 import { NavigationContainer } from '@react-navigation/native'
@@ -162,9 +162,9 @@ export default function NavigationApp() {
 }
 ```
 
-#### Dentro de la App
+#### useScheme dentro de la App
 
-El `theme` de `react-navigation/native` no puede controlar todos los aspectos de nuestra app, Para ello heredando los colores y agregando unos cuantos mas, podemos controlarlo nosotros mismos.
+El `useTheme` de `react-navigation/native` no puede controlar todos los aspectos de nuestra app, Para ello heredando los colores agregando unos cuantos mas en `useScheme` y podemos controlarlo nosotros mismos.
 
 ```typescript
 import { View, Text } from 'react-native'

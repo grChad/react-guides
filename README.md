@@ -5,3 +5,4 @@ Aquí encontrarás consejos, trucos y fragmentos de código para mejorar tu expe
 ## React native CLI
 
 - [Variables de entorno](./cli/env-variables.md)
+- [Cambiar de nombre de la App](./rename_app.md)

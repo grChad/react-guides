@@ -42,11 +42,12 @@ pod 'react-native-config', :path => '../node_modules/react-native-config'
 Para utilizar acceder a `API_URL`. Importa `Config` desde `react-native-config`
 
 ```typescript
-import Config from 'react-native-config';
+import Config from 'react-native-config'
 
-const apiUrl = Config.API_URL;
-```
+const apiUrl = Config.API_URL
+``http://example.com/sound.mp3`
 
 ### Conclusion
 
 - Puedes usar `.env.local`, `.env.production` o el que quieras. Solo que cada vez que agregas algo a tu archivo `.env` tendras que volver a iniciar tu proyecto `npm start`.
+```

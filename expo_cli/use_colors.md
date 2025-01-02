@@ -5,27 +5,27 @@
 Por lo general lo guardo en la ruta `src/constants/colors.ts` y gracias a la estructura de `react-navigation/native`. Ya tengo predefinido los nombres de las variables, y el modelo de los colores.
 
 ```typescript
-import type { Theme } from '@react-navigation/native';
+import type { Theme } from '@react-navigation/native'
 
 export const DarkTheme: Theme = {
   // code
-};
+}
 
 export const DefaultTheme: Theme = {
   // code
-};
+}
 
 export const SchemeDarkColor = {
   isDark: true,
   ...DarkTheme.colors
   // code
-};
+}
 
 export const SchemeLightColor = {
   isDark: false,
   ...DefaultTheme.colors
   // code
-};
+}
 ```
 
 Donde `DarkTheme` y `DefaultTheme` se usan en **NavigationContainer** de `react-navigation/native`, que es el `root` de la aplicación. Y `SchemeDarkColor` y `SchemeLightColor` se usan en cualquier parte de la aplicación.
@@ -34,7 +34,7 @@ Donde `DarkTheme` y `DefaultTheme` se usan en **NavigationContainer** de `react-
   <summary>Código completo aquí</summary>
 
 ```typescript
-import type { Theme } from '@react-navigation/native';
+import type { Theme } from '@react-navigation/native'
 
 export const DarkTheme: Theme = {
   dark: true,
@@ -64,7 +64,7 @@ export const DarkTheme: Theme = {
       fontWeight: '700'
     }
   }
-};
+}
 
 export const DefaultTheme: Theme = {
   dark: false,
@@ -94,7 +94,7 @@ export const DefaultTheme: Theme = {
       fontWeight: '700'
     }
   }
-};
+}
 
 export const SchemeDarkColor = {
   isDark: true,
@@ -103,7 +103,7 @@ export const SchemeDarkColor = {
   popup: '#484848',
   pressPopup: '#585858',
   light: '#D8D5D1'
-};
+}
 
 export const SchemeLightColor = {
   isDark: false,
@@ -112,7 +112,7 @@ export const SchemeLightColor = {
   popup: '#F5F5F5',
   pressPopup: '#DFDFDF',
   light: '#FFFFFF'
-};
+}
 ```
 
 </details>
@@ -122,23 +122,23 @@ export const SchemeLightColor = {
 Es mas conveniente y fácil de usar si creamos un `hook` exclusivo para los colores. Así que en la ruta `./src/hooks/` creamos el archivo `useColor.ts`. Dentro de ella ponemos lo siguiente.
 
 ```typescript
-import { useColorScheme } from 'react-native';
+import { useColorScheme } from 'react-native'
 import {
   SchemeDarkColor,
   SchemeLightColor,
   DarkTheme,
   DefaultTheme
-} from '../constants/colors';
+} from '../constants/colors'
 
 export const useScheme = () => {
-  const theme = useColorScheme();
-  return theme === 'dark' ? SchemeDarkColor : SchemeLightColor;
-};
+  const theme = useColorScheme()
+  return theme === 'dark' ? SchemeDarkColor : SchemeLightColor
+}
 
 export const useTheme = () => {
-  const theme = useColorScheme();
-  return theme === 'dark' ? DarkTheme : DefaultTheme;
-};
+  const theme = useColorScheme()
+  return theme === 'dark' ? DarkTheme : DefaultTheme
+}
 ```
 
 Donde `useTheme` sera usado en **NavigationContainer** y `useScheme` en toda la App.

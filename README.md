@@ -7,7 +7,7 @@ Aquí encontrarás consejos, trucos y fragmentos de código para mejorar tu expe
 - [Variables de entorno](./cli/env-variables.md)
 - Utilizar sonido con [react-native-sound](./cli/sound.md)
 - Cambiar la aquitectura de salida apk [aquí](./cli/change_arquitecture_output.md)
-- Colores(_Themes_), typografia, shapes, spacing. Usando `react-navigation/native`, _MMKV_, _Zustand_ o sin ella [aquí](./expo_cli/use_colors.md).
+- Colores(_Themes_), typografia, shapes, spacing. Usando `react-navigation/native`, _MMKV_, _Zustand_ o sin ella [aquí](./cli/use_Theme.md).
 
 ## Expo y CLI
 

@@ -320,7 +320,7 @@ export default function CardTheme() {
     <View>
       <Button title="system" onPress={() => setTheme('system')} />
       <Button title="light" onPress={() => setTheme('light')} />
-      <Button title="dark" onPress={() => setTheme('light')} />
+      <Button title="dark" onPress={() => setTheme('dark')} />
     </View>
   )
 }
@@ -328,7 +328,7 @@ export default function CardTheme() {
 
 ## Extras: Shapes, Typography & Spacing
 
-Para que toda la app aparente mas profesionalismo, y no tengamos que pensar en mas cosas podemos definirlas desde el inicio.
+Para que toda la app aparente mas profesionalismo; y tengamos que pensar en menos cosas, podemos definirlas desde el inicio.
 
 En `/src/themes/` agregamos otro archivo, le puse `others.ts`.
 

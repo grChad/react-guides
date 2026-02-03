@@ -8,7 +8,7 @@ Aquí encontrarás consejos, trucos y fragmentos de código para mejorar tu expe
 - Utilizar sonido con [react-native-sound](./cli/sound.md)
 - Cambiar la aquitectura de salida apk [aquí](./cli/change_arquitecture_output.md)
 - Colores(_Themes_), typografia, shapes, spacing. Usando `react-navigation/native`, _MMKV_, _Zustand_ o sin ella [aquí](./cli/use_Theme.md).
-- [Splash Screen](./cli/splash_screen.md)
+- Configurar [Splash Screen](./cli/splash_screen.md)
 
 ## Expo y CLI
 
